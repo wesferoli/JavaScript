@@ -8,6 +8,3 @@ console.log(nomes);
 nomes.unshift("Lauren");
 
 console.log(nomes);
-
-// push = adiciona elemento ao fim do array
-// pop = remove elemento do fim do array
