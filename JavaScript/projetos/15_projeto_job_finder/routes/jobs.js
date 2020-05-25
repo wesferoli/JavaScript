@@ -5,6 +5,11 @@ const Job = require('../models/Job');
 // rota de testes
 router.get('/test', (req, res) => {
     res.send('Deu bom!');
+});
+
+// render add page
+router.get("/add", (req, res) => {
+    res.render('add');
 })
 
 // add job via post
