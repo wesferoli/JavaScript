@@ -7,6 +7,17 @@ router.get('/test', (req, res) => {
     res.send('Deu bom!');
 });
 
+// detalhe da vaga
+router.get('/view/:id', (req, res) => Job.findOne({
+    where: {id: req.params.id}
+}).then(job => {
+
+    res.render('view', {
+        job
+    });
+
+}));
+
 // render add page
 router.get("/add", (req, res) => {
     res.render('add');
